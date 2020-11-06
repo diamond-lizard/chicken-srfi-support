@@ -1,0 +1,3119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-11-05 Thu 18:54 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">5</th>
+<th scope="col" class="org-left"><a href="http://eggs.call-cc.org/5/">5</a></th>
+<th scope="col" class="org-left">4</th>
+<th scope="col" class="org-left"><a href="https://eggs.call-cc.org/4">4</a></th>
+<th scope="col" class="org-left">3</th>
+<th scope="col" class="org-left">3</th>
+<th scope="col" class="org-left"><a href="https://srfi.schemers.org/">SRFI</a></th>
+<th scope="col" class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Status</a></th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">core</th>
+<th scope="col" class="org-left"><a href="http://eggs.call-cc.org/5/">egg</a></th>
+<th scope="col" class="org-left">core</th>
+<th scope="col" class="org-left"><a href="https://eggs.call-cc.org/4">egg</a></th>
+<th scope="col" class="org-left">core</th>
+<th scope="col" class="org-left">egg</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Extensions%20to%20the%20standard#cond-expand">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/man/3/Non-standard%20macros%20and%20special%20forms#cond-expand">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/man/3/Non-standard%20macros%20and%20special%20forms#cond-expand">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-0/">0</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Feature-based conditional expansion construct</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-1">Y</a></td>
+<td class="org-left"><a href="https://wiki.call-cc.org/man/4/Unit%20srfi-1">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/man/4/Unit%20srfi-1">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-1/">1</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">List Library</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20(chicken%20base)#and-let">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-macros-and-special-forms#and-let">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-macros-and-special-forms#and-let">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-2/">2</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">AND-LET*: an AND with local bindings, a guarded LET* special form</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-3/">3</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">List-Set Library</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20srfi-4">Y</a></td>
+<td class="org-left"><a href="http://wiki.call-cc.org/eggref/5/srfi-4-comprehensions">Y</a></td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-srfi-4">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-srfi-4">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-4/">4</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Homogeneous numeric vector datatypes</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-5/">5</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">A compatible let form with signatures and rest arguments</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20(chicken%20base)#string-ports">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-library#string-ports">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-library#string-ports">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-6/">6</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Basic String Ports (also see <a href="https://wiki.call-cc.org/manual/unit-ports">Unit ports</a> for a generalisation)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-7/">7</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Feature-based program configuration language</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20(chicken%20base)#receive">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-macros-and-special-forms#receive">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-macros-and-special-forms#receive">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-8/">8</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">receive: Binding to multiple values</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20(chicken%20base)#define-record-type">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/man/3/Non-standard%20macros%20and%20special%20forms#record-structures">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/man/3/Non-standard%20macros%20and%20special%20forms#record-structures">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-9/">9</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Defining Record Types</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Extensions%20to%20the%20standard#external-representation">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-library#reader-extensions">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-library#reader-extensions">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-10/">10</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Sharp-Comma External Form</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20(chicken%20base)#let-values">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-macros-and-special-forms#let-values">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-macros-and-special-forms#let-values">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-11/">11</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Syntax for receiving multiple values</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20%28chicken%20condition%29#srfi-12-specification">Y</a></td>
+<td class="org-left"><a href="http://wiki.call-cc.org/eggref/5/condition-utils">Y</a></td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/exceptions">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/exceptions">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-12/">12</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Exception Handling</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-13">Y</a></td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-srfi-13">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-srfi-13">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-13/">13</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">String Libraries</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-14">Y</a></td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-srfi-14">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-srfi-14">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-14/">14</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Character-Set Library</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20%28chicken%20base%29#fluid-let">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-macros-and-special-forms#fluid-let">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-macros-and-special-forms#fluid-let">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-15/">15</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Syntax for dynamic scoping</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20%28chicken%20base%29#case-lambda">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-macros-and-special-forms#case-lambda">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-macros-and-special-forms#case-lambda">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-16/">16</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Syntax for procedures of variable arity</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20%28chicken%20base%29#srfi-17-setters">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-library#setters">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-library#setters">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-17/">17</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Generalized set! (also see <a href="https://wiki.call-cc.org/manual/Extensions%20to%20the%20standard">heading 4.1.6 in "Extensions to the standard"</a>)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-18">Y</a></td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-srfi-18">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-srfi-18">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-18/">18</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Multithreading support</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-19">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-19">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/3/srfi-19">Y</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-19/">19</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Time Data Types and Procedures</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-20/">20</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Simple object system</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-21/">21</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Real-time multithreading support</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-22/">22</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Running Scheme Scripts on Unix</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20%28chicken%20base%29#error">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-library#error">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-library#error">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-23/">23</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Error reporting mechanism</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-24/">24</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Define-syntax in local lexical scopes</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-25">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-25">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/3/srfi-25">Y</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-25/">25</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Multi-dimensional Array Primitives</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20%28chicken%20base%29#cut">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-macros-and-special-forms#cut">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-macros-and-special-forms#cut">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-26/">26</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Notation for Specializing Parameters without Currying</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-27">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="http://www.call-with-current-continuation.org/eggs/3/srfi-27.html">Y</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-27/">27</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Sources of Random Bits</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20%28chicken%20format%29#format">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-extras#format">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-extras#format">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-28/">28</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Basic Format Strings</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-29">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-29">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/3/srfi-29">Y</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-29/">29</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Localization</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Extensions%20to%20the%20standard#multiline-block-comment">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-read-syntax#multiline-block-comment">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-read-syntax#multiline-block-comment">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-30/">30</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Nested Multi-line Comments</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20%28chicken%20base%29#rec">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-macros-and-special-forms#rec">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-macros-and-special-forms#rec">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-31/">31</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">A special form for recursive evaluation</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-32/">32</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Sort Libraries</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-33/">33</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Integer Bitwise-operation Library</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-34">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-34">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/3/srfi-34">Y</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-34/">34</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Exception Handling for Programs</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-35/">35</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Conditions</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-36/">36</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">I/O Conditions</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-37">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-37">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/3/srfi-37">Y</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-37/">37</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">args-fold: a program argument processor</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-38">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/3/srfi-38">Y</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-38/">38</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">External Representation for Data With Shared Structure</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20%28chicken%20base%29#parameters">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/parameters">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/parameters">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-39/">39</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Parameter objects (also see <a href="https://wiki.call-cc.org/manual/non-standard-macros-and-special-forms#parameterize">the parameterize macro</a>)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-40">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/3/srfi-40">Y</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-40/">40</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">A Library of Streams</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-41">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-41">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/3/srfi-41">Y</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-41/">41</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Streams</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-42">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-42">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/3/srfi-42">Y</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-42/">42</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Eager Comprehensions</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="http://wiki.call-cc.org/eggref/5/vector-lib">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/vector-lib">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-43/">43</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Vector library</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-44/">44</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Collections</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-45">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="http://www.call-with-current-continuation.org/eggs/3/srfi-45.html">Y</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-45/">45</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Primitives for Expressing Iterative Lazy Algorithms</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20scheme#syntax-definitions">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/macros">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/macros">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-46/">46</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Basic Syntax-rules Extensions (chicken 4.6.5 and newer)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/3/srfi-47">Y</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-47/">47</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Array</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-48/">48</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Intermediate Format Strings</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-49/">49</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Indentation-sensitive syntax</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-50/">50</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Mixing Scheme and C</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-51/">51</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Handling rest list</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-52/">52</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Permitting and Supporting Extended Character Sets</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-53/">53</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Syntactic computations with computation-rules</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-54/">54</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Formatting</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20%28chicken%20base%29#require-extension">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-macros-and-special-forms#require-extension">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-macros-and-special-forms#require-extension">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-55/">55</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">require-extension</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-56/">56</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Binary I/O</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-57/">57</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Records</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-58/">58</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Array Notation</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-59/">59</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Vicinity</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-60">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/3/srfi-60">Y</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-60/">60</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Integers as Bits</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20scheme#conditionals">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Extensions%20to%20the%20standard">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Extensions%20to%20the%20standard">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-61/">61</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">A more general cond clause (see heading 2.2.1)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Extensions%20to%20the%20standard#expression-comment">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-read-syntax#expression-comment">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/non-standard-read-syntax#expression-comment">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-62/">62</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">S-expression comments</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-63">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-63">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-63/">63</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Homogeneous and Heterogeneous Arrays</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-64">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-64/">64</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">A Scheme API for test suites</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-65/">65</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">define-immutable: A Syntax to Define Identifiers With Immutable Values</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="http://www.call-with-current-continuation.org/eggs/3/srfi-66.html">Y</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-66/">66</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Octet Vectors</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/3/srfi-67">Y</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-67/">67</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Compare Procedures</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-68/">68</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Comprehensive I/O</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-69">Y</a></td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-srfi-69">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-srfi-69">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-69/">69</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Basic hash tables</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-70/">70</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Numbers</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-71">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-71">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-71/">71</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Extended LET-syntax for multiple values</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-72/">72</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Hygienic macros</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-73/">73</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Exact Infinities</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-74/">74</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Octet-Addressed Binary Blocks</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-75/">75</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">R6RS Unicode data</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-76/">76</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">R6RS Records</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-77/">77</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Preliminary Proposal for R6RS Arithmetic</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-78">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-78/">78</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Lightweight testing</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-79/">79</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Primitive I/O</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-80/">80</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Stream I/O</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-81/">81</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Port I/O</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-82/">82</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Stream Ports</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-83/">83</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">R6RS Library Syntax</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-84/">84</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Universal Identifiers</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/3/srfi-85">Y</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-85/">85</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Recursive Equivalence Predicates</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-86/">86</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">MU and NU simulating VALUES &amp; CALL-WITH-VALUES</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-87/">87</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">=&gt; in case clauses</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20%28chicken%20keyword%29">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-library#keywords">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-library#keywords">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-88/">88</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Keyword objects</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/3/srfi-89">Y</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-89/">89</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Optional positional and named parameters</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-69">Y</a></td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-srfi-69">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-srfi-69">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-90/">90</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Extensible hash table constructor</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-91/">91</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Extended ports</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-92/">92</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">ALAMBDA and ALAMBDA*</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-93/">93</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">R6RS Syntax-Case Macros</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-94/">94</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Type-Restricted Numerical Functions</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-95">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/3/srfi-95">Y</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-95/">95</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Sorting and Merging</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-96/">96</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">SLIB Prerequisites</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-97/">97</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">SRFI Libraries</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/Module%20%28chicken%20process-context%29#get-environment-variable">1</a>,<a href="https://wiki.call-cc.org/manual/Module%20%28chicken%20process-context%29#get-environment-variables">2</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/manual/unit-library#get-environment-variable">1</a>,<a href="https://wiki.call-cc.org/manual/unit-posix#environment-access">2</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-98/">98</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">An interface to access environment variables</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-99">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-99">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-99/">99</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">ERR5RS Records</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-100/">100</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">define-lambda-object</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-101">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-101/">101</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Purely Functional Random-Access Pairs and Lists</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-102">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-102/">102</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Procedure Arity Inspection</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-103/">103</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Library Files</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-104/">104</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Library Files Utilities</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-105">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-105/">105</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Curly-infix-expressions</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-106/">106</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Basic socket interface</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-107/">107</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">XML reader syntax</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-108/">108</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Named quasi-literal constructors</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-109/">109</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Extended string quasi-literals</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-110/">110</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Sweet-expressions (t-expressions)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/box">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-111/">111</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Boxes</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-112/">112</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Environment Inquiry</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-113">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="http://srfi.schemers.org/srfi-113/">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-113/">113</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Sets and bags</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-114/">114</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Comparators</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-115/">115</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Scheme Regular Expressions</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-116">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="http://srfi.schemers.org/srfi-116/">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-116/">116</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Immutable List Library</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-117">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="http://srfi.schemers.org/srfi-117/">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-117/">117</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Queues based on lists</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-118/">118</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Simple adjustable-size strings</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-119/">119</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">wisp: simpler indentation-sensitive scheme</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-120/">120</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Timer APIs</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-121">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-121">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-121/">121</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Generators</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-122/">122</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Nonempty Intervals and Generalized Arrays</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-123">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="http://srfi.schemers.org/srfi-123/">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-123/">123</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Generic accessor and modifier operators</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-124/">124</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Ephemerons</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-125/">125</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Intermediate hash tables</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-126/">126</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">R6RS-based hashtables</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-127/">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-127">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-127/">127</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Lazy Sequences</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-128/">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="http://srfi.schemers.org/srfi-128/">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-128/">128</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Comparators (reduced)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-129/">129</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Titlecase procedures</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-130/">130</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Cursor-based string library</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-131/">131</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">ERR5RS Record Syntax (reduced)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-132/">132</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Sort Libraries</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-133">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-133">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-133/">133</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Vector Library (R7RS-compatible)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-134/">134</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Immutable Deques</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-135/">135</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Immutable Texts</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-136/">136</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Extensible record types</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-137/">137</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Minimal Unique Types</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-138/">138</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Compiling Scheme programs to executables</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-139/">139</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Syntax parameters</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-140/">140</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Immutable Strings</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-141/">141</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Integer division</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-142/">142</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Bitwise Operations</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-143/">143</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Fixnums</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-144/">144</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Flonums</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-145/">145</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Assumptions</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-146/">146</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Mappings</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-147/">147</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Custom macro transformers</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-148/">148</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Eager syntax-rules</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-149/">149</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Basic Syntax-rules Template Extensions</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-150/">150</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Hygienic ERR5RS Record Syntax (reduced)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-151">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-151/">151</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Bitwise Operations</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-152/">152</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">String Library (reduced)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-153/">153</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Ordered Sets</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-154/">154</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">First-class dynamic extents</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-155/">155</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Promises</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-156/">156</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Syntactic combiners for binary predicates</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-157/">157</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Continuation marks</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-158/">158</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Generators and Accumulators</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-159/">159</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Combinator Formatting</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-160/">160</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Homogeneous numeric vector libraries</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-161/">161</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Unifiable Boxes</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-162/">162</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Comparators sublibrary</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-163/">163</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Enhanced array literals</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-164/">164</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Enhanced multi-dimensional Arrays</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-165/">165</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">The Environment Monad</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-166/">166</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Monadic Formatting</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-167/">167</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Ordered Key Value Store</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-168/">168</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Generic Tuple Store Database</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-169/">169</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Underscores in numbers</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-170/">170</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">POSIX API</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-171/">171</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Transducers</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-172/">172</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Two Safer Subsets of R7RS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-173">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-173/">173</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Hooks</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-174/">174</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">POSIX Timespecs</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-175/">175</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">ASCII character library</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-176/">176</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Version flag</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-177/">177</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Portable keyword arguments</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-178/">178</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Bitvector library</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-179/">179</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Nonempty Intervals and Generalized Arrays (Updated)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-180/">180</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">JSON</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-181/">181</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Custom ports (including transcoded ports)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-182/">182</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">ADBMAL</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-183/">183</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Another format procedure</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-184/">184</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">define-record-lambda</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-185/">185</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Linear adjustable-length strings</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-186/">186</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Transcoders and transcoded ports</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-187/">187</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">ALAMBDA and ADEFINE</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-188/">188</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Splicing binding constructs for syntactic keywords</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-189/">189</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Maybe and Either: optional container types</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-190/">190</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Coroutine Generators</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-191/">191</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Procedure Arity Inspection</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-192/">192</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Port Positioning</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-193">Y</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-193/">193</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Command line</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-194/">194</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Random data generators</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-195/">195</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Multiple-value boxes</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-196/">196</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Range Objects</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-197/">197</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">Pipeline Operators</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-198/">198</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">Foreign Interface Status</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-199/">199</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Withdrawn</a></td>
+<td class="org-left">POSIX errno manipulation</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-200/">200</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Draft</a></td>
+<td class="org-left">Pattern Matching</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-201/">201</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Draft</a></td>
+<td class="org-left">Syntactic Extensions to the Core Scheme Bindings</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-202/">202</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Draft</a></td>
+<td class="org-left">Pattern-matching Variant of the and-let* Form that Supports Multiple Values</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-203/">203</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">A Simple Picture Language in the Style of SICP</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-204/">204</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Draft</a></td>
+<td class="org-left">Wright-Cartwright-Shinn Pattern Matcher</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-205/">205</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Draft</a></td>
+<td class="org-left">POSIX Terminal Fundamentals</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-206/">206</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Draft</a></td>
+<td class="org-left">Auxiliary Syntax Keywords</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-207/">207</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Final</a></td>
+<td class="org-left">String-notated bytevectors</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-208/">208</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Draft</a></td>
+<td class="org-left">NaN procedures</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-209/">209</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Draft</a></td>
+<td class="org-left">Enumerations and Enum Sets</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-210/">210</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Draft</a></td>
+<td class="org-left">Procedures and Syntax for Multiple Values</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-211/">211</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Draft</a></td>
+<td class="org-left">Scheme Macro Libraries</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-212/">212</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Draft</a></td>
+<td class="org-left">Aliases</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-213/">213</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Draft</a></td>
+<td class="org-left">Identifier Properties</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-214/">214</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Draft</a></td>
+<td class="org-left">Flexvectors</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-215/">215</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Draft</a></td>
+<td class="org-left">Central Log Exchange</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-216/">216</a></td>
+<td class="org-left"><a href="https://srfi.schemers.org/srfi-process.html">Draft</a></td>
+<td class="org-left">SICP Prerequisites (Portable)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2020-11-05 Thu 18:54</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
