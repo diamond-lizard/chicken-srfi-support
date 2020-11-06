@@ -306,7 +306,7 @@
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
 |      | [[https://wiki.call-cc.org/eggref/5/srfi-151][Y]]   |      |     |      |     | [[https://srfi.schemers.org/srfi-151/][151]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Bitwise Operations                                                          |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
-|      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-152/][152]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | String Library (reduced)                                                    |
+|      | [[https://wiki.call-cc.org/eggref/5/srfi-152][Y]]   |      |     |      |     | [[https://srfi.schemers.org/srfi-152/][152]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | String Library (reduced)                                                    |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
 |      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-153/][153]]  | [[https://srfi.schemers.org/srfi-process.html][Withdrawn]] | Ordered Sets                                                                |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
