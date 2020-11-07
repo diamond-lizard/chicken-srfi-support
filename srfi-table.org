@@ -122,7 +122,7 @@
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
 |      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-59/][59]]   | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Vicinity                                                                    |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
-|      |     |      | [[https://wiki.call-cc.org/eggref/4/srfi-60][Y]]   |      | [[https://wiki.call-cc.org/eggref/3/srfi-60][Y]]   | [[https://srfi.schemers.org/srfi-60/][60]]   | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Integers as Bits                                                            |
+|      |  [[https://wiki.call-cc.org/eggref/5/srfi-60][Y]]  |      | [[https://wiki.call-cc.org/eggref/4/srfi-60][Y]]   |      | [[https://wiki.call-cc.org/eggref/3/srfi-60][Y]]   | [[https://srfi.schemers.org/srfi-60/][60]]   | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Integers as Bits                                                            |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
 | [[https://wiki.call-cc.org/manual/Module%20scheme#conditionals][Y]]    |     | [[https://wiki.call-cc.org/manual/Extensions%20to%20the%20standard][Y]]    |     | [[https://wiki.call-cc.org/manual/Extensions%20to%20the%20standard][Y]]    |     | [[https://srfi.schemers.org/srfi-61/][61]]   | [[https://srfi.schemers.org/srfi-process.html][Final]]     | A more general cond clause (see heading 2.2.1)                              |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
@@ -262,7 +262,7 @@
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
 |      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-129/][129]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Titlecase procedures                                                        |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
-|      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-130/][130]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Cursor-based string library                                                 |
+|      | [[https://wiki.call-cc.org/eggref/5/srfi-130][Y]]   |      |     |      |     | [[https://srfi.schemers.org/srfi-130/][130]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Cursor-based string library                                                 |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
 |      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-131/][131]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | ERR5RS Record Syntax (reduced)                                              |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
