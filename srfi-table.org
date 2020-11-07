@@ -344,7 +344,7 @@
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
 |      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-170/][170]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | POSIX API                                                                   |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
-|      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-171/][171]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Transducers                                                                 |
+|      |  [[https://wiki.call-cc.org/eggref/5/srfi-171][Y]]  |      |     |      |     | [[https://srfi.schemers.org/srfi-171/][171]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Transducers                                                                 |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
 |      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-172/][172]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Two Safer Subsets of R7RS                                                   |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
