@@ -543,7 +543,7 @@
 </tbody>
 <tbody>
 <tr>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Y</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/srfi-38">Y</a></td>
@@ -1493,7 +1493,7 @@
 <tbody>
 <tr>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://wiki.call-cc.org/eggref/5/srfi-111">Y</a></td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left"><a href="https://wiki.call-cc.org/eggref/4/box">Y</a></td>
 <td class="org-left">&#xa0;</td>
