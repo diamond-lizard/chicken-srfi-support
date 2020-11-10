@@ -394,9 +394,9 @@
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
 |      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-195/][195]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Multiple-value boxes                                                        |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
-|      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-196/][196]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Range Objects                                                               |
+|      | [[https://wiki.call-cc.org/eggref/5/srfi-196][Y]]   |      |     |      |     | [[https://srfi.schemers.org/srfi-196/][196]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Range Objects                                                               |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
-|      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-197/][197]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Pipeline Operators                                                          |
+|      | [[https://wiki.call-cc.org/eggref/5/srfi-197][Y]]   |      |     |      |     | [[https://srfi.schemers.org/srfi-197/][197]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Pipeline Operators                                                          |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
 |      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-198/][198]]  | [[https://srfi.schemers.org/srfi-process.html][Withdrawn]] | Foreign Interface Status                                                    |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
