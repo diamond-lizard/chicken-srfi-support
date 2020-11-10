@@ -134,7 +134,7 @@
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
 |      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-65/][65]]   | [[https://srfi.schemers.org/srfi-process.html][Withdrawn]] | define-immutable: A Syntax to Define Identifiers With Immutable Values      |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
-|      |     |      |     |      | [[http://www.call-with-current-continuation.org/eggs/3/srfi-66.html][Y]]   | [[https://srfi.schemers.org/srfi-66/][66]]   | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Octet Vectors                                                               |
+|      | [[https://wiki.call-cc.org/eggref/5/srfi-66][Y]]   |      |     |      | [[http://www.call-with-current-continuation.org/eggs/3/srfi-66.html][Y]]   | [[https://srfi.schemers.org/srfi-66/][66]]   | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Octet Vectors                                                               |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
 |      |     |      |     |      | [[https://wiki.call-cc.org/eggref/3/srfi-67][Y]]   | [[https://srfi.schemers.org/srfi-67/][67]]   | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Compare Procedures                                                          |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
