@@ -322,7 +322,7 @@
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
 |      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-159/][159]]  | [[https://srfi.schemers.org/srfi-process.html][Withdrawn]] | Combinator Formatting                                                       |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
-|      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-160/][160]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Homogeneous numeric vector libraries                                        |
+|      | [[https://wiki.call-cc.org/eggref/5/srfi-160][Y]]   |      |     |      |     | [[https://srfi.schemers.org/srfi-160/][160]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Homogeneous numeric vector libraries                                        |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
 |      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-161/][161]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Unifiable Boxes                                                             |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
