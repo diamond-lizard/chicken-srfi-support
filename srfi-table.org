@@ -292,9 +292,9 @@
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
 |      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-144/][144]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Flonums                                                                     |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
-|      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-145/][145]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Assumptions                                                                 |
+|      | [[https://wiki.call-cc.org/eggref/5/srfi-145][Y]]   |      |     |      |     | [[https://srfi.schemers.org/srfi-145/][145]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Assumptions                                                                 |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
-|      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-146/][146]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Mappings                                                                    |
+|      | [[https://wiki.call-cc.org/eggref/5/srfi-146][Y]]   |      |     |      |     | [[https://srfi.schemers.org/srfi-146/][146]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Mappings                                                                    |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
 |      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-147/][147]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Custom macro transformers                                                   |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
@@ -318,7 +318,7 @@
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
 |      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-157/][157]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Continuation marks                                                          |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
-|      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-158/][158]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Generators and Accumulators                                                 |
+|      | [[https://wiki.call-cc.org/eggref/5/srfi-158][Y]]   |      |     |      |     | [[https://srfi.schemers.org/srfi-158/][158]]  | [[https://srfi.schemers.org/srfi-process.html][Final]]     | Generators and Accumulators                                                 |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
 |      |     |      |     |      |     | [[https://srfi.schemers.org/srfi-159/][159]]  | [[https://srfi.schemers.org/srfi-process.html][Withdrawn]] | Combinator Formatting                                                       |
 |------+-----+------+-----+------+-----+------+-----------+-----------------------------------------------------------------------------|
